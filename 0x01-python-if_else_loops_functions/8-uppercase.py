@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 place_holder = ''
+
+
 def uppercase(str):
     for i in str:
         if ord(i) > 96 and ord(i) < 123:
