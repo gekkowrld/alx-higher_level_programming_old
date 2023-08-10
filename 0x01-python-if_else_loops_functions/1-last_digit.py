@@ -2,8 +2,10 @@
 import random
 number = random.randint(-10000, 10000)
 
+
 def last_digit(num):
     return num - (10 * int(num/10))
+
 
 l_digit = last_digit(number)
 
