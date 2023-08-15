@@ -211,3 +211,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# ALX main files
+*main.*
