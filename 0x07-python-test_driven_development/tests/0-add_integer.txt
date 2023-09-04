@@ -1,0 +1,45 @@
+===============
+Usage
+===============
+
+The module is intended to be used to add integers.
+All "numbers" are welcome but nothing more
+
+If a non numeric character is passed, it is supposed to fail
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+    >>> add_integer(2,3)
+    5
+
+For a float and family, the value after the decimal is to be ignored
+    >>> add_integer(2.4, 6.7)
+    8
+
+If 'a' is not a numerical character, it should fail with Type Error
+    >>> add_integer('hello', 6)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+If 'b' is not a numerical character, it should fail with Type Error
+    >>> add_integer(4, 'me')
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+If both are not, then raise only for the first one
+    >>> add_integer('its', 'me')
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+If anything tries to pass through it should be dealt the same way
+    >>> add_integer(float('nan'), 223)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> add_integer(4, float('nan'))
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+    TypeError: a must be an integer
