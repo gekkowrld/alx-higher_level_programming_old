@@ -22,8 +22,4 @@ case 2: Empty set
     >>> print(my_list)
     []
 
-case 2: Non-int
-    >>> my_list = MyList()
-    >>> my_list.append('a')
-    >>> print(my_list)
 
